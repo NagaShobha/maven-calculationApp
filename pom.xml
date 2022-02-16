@@ -34,6 +34,19 @@
 
 	</dependencies>
 	
+	<distributionManagement>
+  <repository>
+    <id>releases</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://localhost:8081/repository/sample-release/</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://localhost:8081/repository/sample-snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
+	
 	<!-- Timestamp for artifact file -->
 	<properties>
    		 <maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss'Z'</maven.build.timestamp.format>
